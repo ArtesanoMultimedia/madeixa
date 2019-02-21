@@ -185,6 +185,7 @@ app.delete('/:id', mdAutenticacion.verificaToken, (req, res) => {
 
         res.status(200).json({
             ok: true,
+            mensaje: 'categoría borrada',
             categoria: categoriaBorrada
         });
 
